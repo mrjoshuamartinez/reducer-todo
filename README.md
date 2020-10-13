@@ -25,7 +25,7 @@ In this project, you build an app that let's you display a todo list from reduce
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 ### Task 2a: Minimum Viable Product
-
+ 
 1. Set an initial state value through a reducer and render a list of todos from that state
 2. Add a form that dispatches an "ADD_TODO" action to be able to add a todo item to your list
 3. Build a function that let's you mark todo items as completed when you click on them
