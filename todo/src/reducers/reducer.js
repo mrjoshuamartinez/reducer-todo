@@ -14,8 +14,6 @@ export const Reducer = (state, action) => {
             return {
                 todos: state.todos.filter(t => !t.completed),
                 todoCount: state.todos.length
-                // console.log(state)
-                // state.todos.filter(({index}) => index !== action.id);
                 }
         default:
             return state;

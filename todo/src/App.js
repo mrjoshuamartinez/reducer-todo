@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [{ todos, todoCount }, dispatch] = useReducer(Reducer, { 
     todos: [], 
-    todoCount: 0 
+    todoCount: 0,
   });
   const [text, setText] = useState("");
 
@@ -16,7 +16,7 @@ function App() {
         <div>
           { todos.map((todo, index) => (
               <div 
-              key={ index} 
+              key={index} 
               onClick={() => dispatch(
                 { type: "TOGGLE_TODO", index }
               )}
@@ -35,7 +35,7 @@ function App() {
           <form
             onSubmit={e => {
               e.preventDefault();
-              dispatch({ type: "ADD_TODO", text });
+              text.length === 0 ? alert("No Task To Add!") : dispatch({ type: "ADD_TODO", text });
               setText("");
             }}
           >
